@@ -99,6 +99,6 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ## Acknowledgments
 
-Special thanks to Bahloul M., a Junior Web Developer from France, who provided me the design file for this project. 
+Special thanks to Danny Wen, a Junior Web Developer from Taiwan, I got some inspiration by seeing his design on GitHub page.
 
-https://03ad7aba.front-end-mentor-single-page-developer-portfolio.pages.dev/
+https://furxx2000.github.io/Single-page-developer-portfolio/
