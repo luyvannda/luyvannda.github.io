@@ -3,6 +3,7 @@
 
 $main-black-color: #222222;
 $main-white-color: #ffffff;
+$underline-green: #4ee1a0;
 $text-opacity: 0.9;
 
 * {
@@ -26,6 +27,7 @@ body {
   width: 100vw;
   min-height: 100vh;
   font-family: 'Space Grotesk', sans-serif;
+  color: $main-white-color;
 }
 
 .navbar {
@@ -35,17 +37,18 @@ body {
 
   h3 {
     font-size: 1.5rem;
-    color: rgba($main-white-color, $text-opacity);
-    padding: 1.5rem 0 1.5rem 0;
+    color: $main-white-color;
+    padding: 1.5rem 0 1rem 0;
   }
 
   .social-links {
     display: flex;
     gap: 1rem;
+    padding-bottom: 1rem;
 
     a {
       text-decoration: none;
-      color: rgba($main-white-color, $text-opacity);
+      color: $main-white-color;
       font-size: 1.5rem;
     }
   }
@@ -77,5 +80,29 @@ body {
     bottom: 0rem;
     left: 16.5rem;
     z-index: 0;
+  }
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    width: 14ch;
+    text-align: center;
+
+    span {
+      text-decoration: none;
+
+      &::after {
+        content: "";
+        display: block;
+        width: 8.7rem;
+        margin-left: 3.65rem;
+        margin-top: -0.4rem;
+        border-bottom: 0.2em solid $underline-green;
+      }
+    }
   }
 }
