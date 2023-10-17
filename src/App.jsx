@@ -1,5 +1,6 @@
 import './App.scss'
 import Navbar from './components/Navbar'
+import ProfilePhoto from './components/ProfilePhoto'
 
 function App() {
 
@@ -8,7 +9,9 @@ function App() {
       <header className='header'>
         <Navbar />
       </header>
-
+      <section className='hero'>
+        <ProfilePhoto />
+      </section>
     </div>
   )
 }

@@ -37,4 +37,12 @@ body {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.9);
   font-size: 1.5rem;
+}
+
+.profile_photo {
+  display: flex;
+  justify-content: center;
+}
+.profile_photo img {
+  width: 10rem;
 }/*# sourceMappingURL=App.css.map */
