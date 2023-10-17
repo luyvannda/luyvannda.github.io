@@ -39,10 +39,26 @@ body {
   font-size: 1.5rem;
 }
 
-.profile_photo {
+.profile-container {
+  position: relative;
+}
+.profile-container .profile_photo {
   display: flex;
   justify-content: center;
 }
-.profile_photo img {
+.profile-container .profile_photo .photo {
   width: 10rem;
+  z-index: 1;
+}
+.profile-container .rings {
+  position: absolute;
+  top: 0;
+  right: 9.2rem;
+  z-index: 0;
+}
+.profile-container .circle {
+  position: absolute;
+  bottom: 0rem;
+  left: 16.5rem;
+  z-index: 0;
 }/*# sourceMappingURL=App.css.map */

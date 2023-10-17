@@ -51,12 +51,31 @@ body {
   }
 }
 
-.profile_photo {
-  display: flex;
-  justify-content: center;
+.profile-container {
+  position: relative;
 
-  img {
-    width: 10rem
+  .profile_photo {
+    display: flex;
+    justify-content: center;
+
+    .photo {
+      width: 10rem;
+      z-index: 1;
+    }
+
   }
 
+  .rings {
+    position: absolute;
+    top: 0;
+    right: 9.2rem;
+    z-index: 0;
+  }
+
+  .circle {
+    position: absolute;
+    bottom: 0rem;
+    left: 16.5rem;
+    z-index: 0;
+  }
 }
