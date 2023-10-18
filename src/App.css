@@ -129,4 +129,16 @@ body {
 .contact-btn .contact-me:hover {
   color: #4ee1a0;
   cursor: pointer;
+}
+
+.skills {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.skills h1 {
+  font-size: 2rem;
+}
+.skills p {
+  font-weight: 500;
+  color: #D9D9D9;
 }/*# sourceMappingURL=App.css.map */

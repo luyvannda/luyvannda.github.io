@@ -164,5 +164,18 @@ body {
       cursor: pointer;
     }
   }
+}
 
+.skills {
+  text-align: center;
+  padding-bottom: 2rem;
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-weight: 500;
+    color: $main-text-gray;
+  }
 }
