@@ -10,6 +10,7 @@
 
 $main-black-color: #222222;
 $main-white-color: #ffffff;
+$main-text-gray: #D9D9D9;
 $underline-green: #4ee1a0;
 $text-opacity: 0.9;
 
@@ -95,7 +96,6 @@ body {
     @include media-min(768px) {
       right: 0;
     }
-
   }
 
 }
@@ -104,10 +104,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 1rem;
+  text-align: center;
 
-  h2 {
+  .hero-title {
     width: 14ch;
-    text-align: center;
+    font-size: 2rem;
 
     span {
       text-decoration: none;
@@ -115,11 +117,18 @@ body {
       &::after {
         content: "";
         display: block;
-        width: 8.7rem;
-        margin-left: 3.65rem;
+        width: 11.2rem;
+        margin-left: 4.9rem;
         margin-top: -0.4rem;
         border-bottom: 0.2em solid $underline-green;
       }
     }
+  }
+
+  .hero-text {
+    color: $main-text-gray;
+    padding: 1.25rem 1.1rem;
+    line-height: 1.625rem;
+    text-align: justify;
   }
 }
