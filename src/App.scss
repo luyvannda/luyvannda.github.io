@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap');
 
 
+@mixin media-min($breakpoint) {
+  @media only screen and (min-width: $breakpoint) {
+    @content;
+  }
+}
+
+
 $main-black-color: #222222;
 $main-white-color: #ffffff;
 $underline-green: #4ee1a0;
@@ -28,6 +35,7 @@ body {
   min-height: 100vh;
   font-family: 'Space Grotesk', sans-serif;
   color: $main-white-color;
+  overflow-x: hidden;
 }
 
 .navbar {
@@ -55,11 +63,14 @@ body {
 }
 
 .profile-container {
+  width: 100vw;
   position: relative;
+  overflow-x: hidden;
 
   .profile_photo {
     display: flex;
     justify-content: center;
+
 
     .photo {
       width: 10rem;
@@ -71,16 +82,22 @@ body {
   .rings {
     position: absolute;
     top: 0;
-    right: 9.2rem;
+    left: -25rem;
     z-index: 0;
   }
 
   .circle {
     position: absolute;
     bottom: 0rem;
-    left: 16.5rem;
+    right: -4.5rem;
     z-index: 0;
+
+    @include media-min(768px) {
+      right: 0;
+    }
+
   }
+
 }
 
 .hero {

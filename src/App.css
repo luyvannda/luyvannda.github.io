@@ -18,6 +18,7 @@ body {
   min-height: 100vh;
   font-family: "Space Grotesk", sans-serif;
   color: #ffffff;
+  overflow-x: hidden;
 }
 
 .navbar {
@@ -42,7 +43,9 @@ body {
 }
 
 .profile-container {
+  width: 100vw;
   position: relative;
+  overflow-x: hidden;
 }
 .profile-container .profile_photo {
   display: flex;
@@ -55,14 +58,19 @@ body {
 .profile-container .rings {
   position: absolute;
   top: 0;
-  right: 9.2rem;
+  left: -25rem;
   z-index: 0;
 }
 .profile-container .circle {
   position: absolute;
   bottom: 0rem;
-  left: 16.5rem;
+  right: -4.5rem;
   z-index: 0;
+}
+@media only screen and (min-width: 768px) {
+  .profile-container .circle {
+    right: 0;
+  }
 }
 
 .hero {
