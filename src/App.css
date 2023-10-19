@@ -173,4 +173,13 @@ body {
 }
 .projects .projects-heading h2 {
   font-size: 2.5rem;
+}
+.projects .projects-main {
+  padding-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+.projects .projects-main img {
+  width: 90.25vw;
+  margin-bottom: 0.8rem;
 }/*# sourceMappingURL=App.css.map */
