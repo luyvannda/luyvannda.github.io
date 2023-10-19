@@ -17,8 +17,8 @@ export default function Projects() {
         <p>HTML CSS</p>
 
         <div className="project-links">
-          <a href="#">VIEW PROJECT</a>
-          <a href="#">VIEW CODE</a>
+          <a className="live-view" href="#">VIEW PROJECT</a>
+          <a className="source-view" href="#">VIEW CODE</a>
         </div>
 
       </div>

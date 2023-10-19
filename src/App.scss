@@ -207,6 +207,7 @@ body {
 
 .projects {
   padding: 0 1.1rem 2rem 1.1rem;
+  overflow-x: hidden;
 
   .projects-heading {
     display: flex;
@@ -230,5 +231,56 @@ body {
       margin-bottom: 0.8rem;
     }
 
+    h2 {
+      padding: 0.5rem 0;
+      font-size: 1.5rem;
+    }
+
+    p {
+      color: $main-text-gray;
+      padding-bottom: 1rem;
+      word-spacing: 0.8rem;
+    }
+
+    .project-links {
+      display: flex;
+      gap: 1.5rem;
+
+      .live-view {
+        text-decoration: none;
+        color: $main-white-color;
+
+        &::after {
+          content: "";
+          display: block;
+          margin-top: 0.4rem;
+          width: 6.9rem;
+          border-bottom: 2px solid $underline-green;
+        }
+
+        &:hover {
+          color: $underline-green;
+          cursor: pointer;
+        }
+      }
+
+      .source-view {
+        text-decoration: none;
+        color: $main-white-color;
+
+        &::after {
+          content: "";
+          display: block;
+          margin-top: 0.4rem;
+          width: 5.2rem;
+          border-bottom: 2px solid $underline-green;
+        }
+
+        &:hover {
+          color: $underline-green;
+          cursor: pointer;
+        }
+      }
+    }
   }
 }
