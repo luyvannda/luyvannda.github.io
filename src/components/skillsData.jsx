@@ -32,7 +32,7 @@ export const skillsData = [
 
   {
     id: 6,
-    name: "SASS",
+    name: "Sass",
     experience: "6 Months"
   }
 ]

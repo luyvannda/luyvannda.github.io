@@ -10,7 +10,18 @@ function Skills() {
       </div>
     )
   })
-  return <div>{skillsElement}</div>
+
+  return (
+    <>
+      <div className="skills-container">
+        {skillsElement}
+
+        <img className="skill-rings" src="./images/pattern-rings.svg" alt="rings pattern"></img>
+      </div>
+
+
+    </>
+  )
 }
 
 export default Skills
