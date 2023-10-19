@@ -112,6 +112,7 @@ body {
     display: block;
     width: 90vw;
     border-bottom: 1.5px solid $main-white-color;
+    padding-bottom: 3.5rem;
   }
 
   .hero-title {
@@ -134,7 +135,7 @@ body {
 
   .hero-text {
     color: $main-text-gray;
-    padding: 1.25rem 1.1rem;
+    padding: 1.5rem 1.1rem;
     line-height: 1.625rem;
     text-align: justify;
   }
@@ -149,7 +150,6 @@ body {
     color: $main-white-color;
     font-weight: 600;
     letter-spacing: 0.1rem;
-    padding: 0.5rem 0 3.5rem 0;
 
     &::after {
       content: "";
@@ -172,6 +172,7 @@ body {
   flex-direction: column;
   align-items: center;
   position: relative;
+  overflow-x: hidden;
 
   &::after {
     content: "";
@@ -205,10 +206,12 @@ body {
 
 
 .projects {
+  padding: 0 1.1rem 2rem 1.1rem;
 
   .projects-heading {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
     h2 {
       font-size: 2.5rem;
