@@ -160,4 +160,12 @@ body {
   position: absolute;
   bottom: 0;
   right: -23.5rem;
+}
+
+.projects .projects-heading {
+  display: flex;
+  align-items: center;
+}
+.projects .projects-heading h2 {
+  font-size: 2.5rem;
 }/*# sourceMappingURL=App.css.map */
