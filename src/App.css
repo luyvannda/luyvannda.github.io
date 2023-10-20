@@ -80,6 +80,7 @@ body {
   margin-top: 1rem;
   padding-bottom: 2rem;
   text-align: center;
+  overflow-x: hidden;
 }
 .hero::after {
   content: "";
@@ -194,6 +195,7 @@ body {
   word-spacing: 0.8rem;
 }
 .projects .projects-main .project-links {
+  margin-bottom: 0.5rem;
   display: flex;
   gap: 1.5rem;
 }
