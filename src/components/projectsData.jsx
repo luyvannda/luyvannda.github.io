@@ -33,5 +33,14 @@ export const projectsData = [
     skills: "HTML CSS JAVASCRIPT",
     livePreview: "https://luyvannda.github.io/odin-calculator/",
     sourceCode: "https://github.com/luyvannda/odin-calculator"
+  },
+
+  {
+    id: 5,
+    imgCover: "digital-business-card.webp",
+    title: "DIGITAL BUSINESS CARD",
+    skills: "REACT SASS",
+    livePreview: "https://luyvannda.github.io/digital-business-card/",
+    sourceCode: "https://github.com/luyvannda/digital-business-card"
   }
 ]
