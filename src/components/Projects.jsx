@@ -1,6 +1,23 @@
 import ContactBtn from "./ContactBtn";
+import { projectsData } from "./projectsData";
 
 export default function Projects() {
+  const projectElements = projectsData.map((project) => {
+    return (
+
+      <div key={project.id} className="projects-main">
+        <img src={`images/${project.imgCover}`} alt="Project's preview image"></img>
+        <h2>{project.title}</h2>
+        <p>{project.skills}</p>
+
+        <div className="project-links">
+          <a className="live-view" href={project.livePreview} target="_blank" rel="noreferrer">VIEW PROJECT</a>
+          <a className="source-view" href={project.sourceCode} target="_blank" rel="noreferrer">VIEW CODE</a>
+        </div>
+      </div>
+    )
+  })
+
 
   return (
     <div className="projects">
@@ -10,19 +27,9 @@ export default function Projects() {
         <ContactBtn />
       </div>
 
-      <div className="projects-main">
-
-        <img src="images/thumbnail-project-1-large.webp" alt="A project picture"></img>
-        <h2>DESIGN PORTFOLIO</h2>
-        <p>HTML CSS</p>
-
-        <div className="project-links">
-          <a className="live-view" href="#">VIEW PROJECT</a>
-          <a className="source-view" href="#">VIEW CODE</a>
-        </div>
-
-      </div>
+      {projectElements}
 
     </div>
+
   )
 }
