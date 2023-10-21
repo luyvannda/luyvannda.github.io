@@ -306,6 +306,13 @@ body {
   form {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+
+    #name,
+    #email,
+    #message {
+      width: 100%;
+      // background-color: transparent;
+      // border: none;
+    }
   }
 }

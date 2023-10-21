@@ -247,5 +247,9 @@ body {
 .form-container form {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+}
+.form-container form #name,
+.form-container form #email,
+.form-container form #message {
+  width: 100%;
 }/*# sourceMappingURL=App.css.map */
