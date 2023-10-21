@@ -19,10 +19,10 @@ export default function ContactForm() {
         </label>
 
         <label htmlFor="message">
-          <input id="message" type="text" name="message" placeholder="MESSAGE"></input>
+          <textarea id="message" name="message" rows="4" placeholder="MESSAGE"></textarea>
         </label>
 
-        <button type="submit">SEND MESSAGE</button>
+        <button className="form-btn" type="submit">SEND MESSAGE</button>
       </form>
 
     </div>
