@@ -1,8 +1,33 @@
 export default function ContactForm() {
   return (
-    <form>
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdbiByqzfTtmBHAYF0tll4_XwcrHdoPWR8GEsi1pjiScK3Nlw/viewform?embedded=true" width="640" height="849" frameBorder="0" marginHeight="0" marginWidth="0">Loading…</iframe>
 
-    </form>
+    <div className="form-container">
+      <h2>Contact</h2>
+      <p>I would love to hear about your project and how I could help. Please fill in the form, and I&apos; get back to you as soon as possible.</p>
+
+      <form
+        className="contact-form"
+        action="https://getform.io/f/e84d47c6-f990-424a-b7fe-56b37f894479"
+        method="POST">
+
+        <label htmlFor="name">
+          <input id="name" type="text" name="name" placeholder="NAME"></input>
+        </label>
+
+        <label htmlFor="email">
+          <input id="email" type="email" name="email" placeholder="EMAIL"></input>
+        </label>
+
+        <label htmlFor="message">
+          <input id="message" type="text" name="message" placeholder="MESSAGE"></input>
+        </label>
+
+        <button type="submit">SEND MESSAGE</button>
+      </form>
+
+    </div>
   )
 }
+
+
+/* <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdbiByqzfTtmBHAYF0tll4_XwcrHdoPWR8GEsi1pjiScK3Nlw/viewform?embedded=true" width="640" height="849" frameBorder="0" marginHeight="0" marginWidth="0">Loading…</iframe> */
