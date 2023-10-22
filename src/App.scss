@@ -82,7 +82,7 @@ body {
   .rings {
     position: absolute;
     top: 0;
-    left: -24rem;
+    left: -21rem;
     z-index: 0;
   }
 
@@ -304,16 +304,35 @@ body {
   }
 
   form {
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    width: 100%;
+    gap: 1rem;
+    margin-top: 2rem;
+
 
     #name,
     #email,
     #message {
       width: 100%;
-      // background-color: transparent;
-      // border: none;
+      color: $main-white-color;
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid $main-white-color;
+      padding: 0 0 1rem 1.5rem;
     }
+
+    #name:focus,
+    #email:focus,
+    #message:focus {
+
+      outline: none;
+      border-bottom: 1px solid $underline-green;
+
+    }
+  }
+
+  #message {
+    margin-top: 0.5rem;
   }
 }

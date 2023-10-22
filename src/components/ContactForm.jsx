@@ -3,7 +3,7 @@ export default function ContactForm() {
 
     <div className="form-container">
       <h2>Contact</h2>
-      <p>I would love to hear about your project and how I could help. Please fill in the form, and I&apos; get back to you as soon as possible.</p>
+      <p>I would love to hear about your project and how I could help. Please fill in the form, and I&apos;ll get back to you as soon as possible.</p>
 
       <form
         className="contact-form"
