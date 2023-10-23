@@ -250,7 +250,9 @@ body {
   flex-direction: column;
   gap: 1rem;
   margin-top: 2rem;
+  padding-bottom: 3.5rem;
   position: relative;
+  border-bottom: 1px solid #ffffff;
 }
 .form-container form #name,
 .form-container form #email,
@@ -273,15 +275,24 @@ body {
 }
 .form-container form .form-rings {
   position: absolute;
-  bottom: 0;
+  bottom: 4.4rem;
   left: -23rem;
 }
 .form-container form .form-btn {
-  width: 10ch;
   align-self: flex-end;
   border: none;
   border-radius: 0;
   background-color: transparent;
   color: #ffffff;
+  padding-bottom: 1rem;
+}
+.form-container form .form-btn::after {
+  content: "";
+  display: block;
+  width: 7.3rem;
+  margin-top: 0.5rem;
   border-bottom: 2px solid #4ee1a0;
+}
+.form-container form .form-btn:hover {
+  color: #4ee1a0;
 }/*# sourceMappingURL=App.css.map */

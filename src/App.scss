@@ -309,8 +309,9 @@ body {
     flex-direction: column;
     gap: 1rem;
     margin-top: 2rem;
+    padding-bottom: 3.5rem;
     position: relative;
-
+    border-bottom: 1px solid $main-white-color;
 
     #name,
     #email,
@@ -336,18 +337,30 @@ body {
 
     .form-rings {
       position: absolute;
-      bottom: 0;
+      bottom: 4.4rem;
       left: -23rem;
     }
 
     .form-btn {
-      width: 10ch;
       align-self: flex-end;
       border: none;
       border-radius: 0;
       background-color: transparent;
       color: $main-white-color;
-      border-bottom: 2px solid $underline-green;
+      padding-bottom: 1rem;
+
+
+      &::after {
+        content: "";
+        display: block;
+        width: 7.3rem;
+        margin-top: 0.5rem;
+        border-bottom: 2px solid $underline-green;
+      }
+
+      &:hover {
+        color: $underline-green;
+      }
 
     }
   }
