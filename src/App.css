@@ -64,7 +64,7 @@ body {
 .profile-container .circle {
   position: absolute;
   bottom: 0rem;
-  right: -4.5rem;
+  right: -3.2rem;
   z-index: 0;
 }
 @media only screen and (min-width: 768px) {
@@ -272,6 +272,7 @@ body {
 }
 .form-container form #message {
   margin-top: 0.5rem;
+  resize: none;
 }
 .form-container form .form-rings {
   position: absolute;
@@ -295,4 +296,9 @@ body {
 }
 .form-container form .form-btn:hover {
   color: #4ee1a0;
+}
+
+footer {
+  background-color: rgba(217, 217, 217, 0.1);
+  padding-bottom: 2rem;
 }/*# sourceMappingURL=App.css.map */

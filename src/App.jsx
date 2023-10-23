@@ -28,6 +28,9 @@ function App() {
           <ContactForm />
         </section>
       </main>
+      <footer className='footer'>
+        <Navbar />
+      </footer>
     </div>
   )
 }
