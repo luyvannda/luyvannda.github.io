@@ -21,6 +21,7 @@ export default function ContactForm() {
         <label htmlFor="message">
           <textarea id="message" name="message" rows="4" placeholder="MESSAGE"></textarea>
         </label>
+        <img className="form-rings" src="images/pattern-rings.svg" alt="rings pattern decoration"></img>
 
         <button className="form-btn" type="submit">SEND MESSAGE</button>
       </form>
