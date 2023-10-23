@@ -67,17 +67,30 @@ body {
       }
     }
   }
+
+}
+
+@include media-min(768px) {
+  .navbar {
+    padding: 0 1.1rem 0 1.1rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .social-links {
+      padding-bottom: 0;
+    }
+  }
+
 }
 
 .profile-container {
   width: 100vw;
-  position: relative;
   overflow-x: hidden;
 
   .profile_photo {
     display: flex;
     justify-content: center;
-
 
     .photo {
       width: 10rem;
@@ -85,26 +98,9 @@ body {
     }
 
   }
-
-  .rings {
-    position: absolute;
-    top: 0;
-    left: -21rem;
-    z-index: 0;
-  }
-
-  .circle {
-    position: absolute;
-    bottom: 0rem;
-    right: -3.2rem;
-    z-index: 0;
-
-    @include media-min(768px) {
-      right: 0;
-    }
-  }
-
 }
+
+
 
 .hero {
   display: flex;
@@ -171,6 +167,40 @@ body {
       color: $underline-green;
       cursor: pointer;
     }
+  }
+}
+
+
+.hero-container {
+  position: relative;
+  overflow-x: hidden;
+
+  .rings {
+    position: absolute;
+    top: 0;
+    left: -21rem;
+    z-index: 0;
+  }
+
+  .circle {
+    position: absolute;
+    top: 5rem;
+    right: -3.5rem;
+    z-index: 0;
+
+    @include media-min(768px) {
+      right: 0;
+    }
+  }
+}
+
+
+@include media-min(768px) {
+  .hero-container {
+    display: flex;
+    flex-direction: row-reverse;
+
+
   }
 }
 

@@ -48,9 +48,19 @@ body {
   color: #4ee1a0;
 }
 
+@media only screen and (min-width: 768px) {
+  .navbar {
+    padding: 0 1.1rem 0 1.1rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navbar .social-links {
+    padding-bottom: 0;
+  }
+}
 .profile-container {
   width: 100vw;
-  position: relative;
   overflow-x: hidden;
 }
 .profile-container .profile_photo {
@@ -60,23 +70,6 @@ body {
 .profile-container .profile_photo .photo {
   width: 10rem;
   z-index: 1;
-}
-.profile-container .rings {
-  position: absolute;
-  top: 0;
-  left: -21rem;
-  z-index: 0;
-}
-.profile-container .circle {
-  position: absolute;
-  bottom: 0rem;
-  right: -3.2rem;
-  z-index: 0;
-}
-@media only screen and (min-width: 768px) {
-  .profile-container .circle {
-    right: 0;
-  }
 }
 
 .hero {
@@ -138,6 +131,34 @@ body {
   cursor: pointer;
 }
 
+.hero-container {
+  position: relative;
+  overflow-x: hidden;
+}
+.hero-container .rings {
+  position: absolute;
+  top: 0;
+  left: -21rem;
+  z-index: 0;
+}
+.hero-container .circle {
+  position: absolute;
+  top: 5rem;
+  right: -3.5rem;
+  z-index: 0;
+}
+@media only screen and (min-width: 768px) {
+  .hero-container .circle {
+    right: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
 .skills-container {
   padding-bottom: 4rem;
   display: flex;

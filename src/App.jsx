@@ -17,6 +17,10 @@ function App() {
         <section className='hero-container'>
           <ProfilePhoto />
           <Hero />
+
+          <img className="rings" src="./images/pattern-rings.svg" alt="rings pattern"></img>
+
+          <img className="circle" src="./images/pattern-circle.svg" alt="circle pattern"></img>
         </section>
 
         <section>
