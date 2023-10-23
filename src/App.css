@@ -37,9 +37,15 @@ body {
   padding-bottom: 1rem;
 }
 .navbar .social-links a {
+  display: inline-block;
   text-decoration: none;
   color: #ffffff;
   font-size: 1.5rem;
+  transition: transform 0.3s ease-in-out;
+}
+.navbar .social-links a:hover {
+  transform: translateY(5px);
+  color: #4ee1a0;
 }
 
 .profile-container {

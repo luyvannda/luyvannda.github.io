@@ -11,7 +11,7 @@ export default function Navbar() {
 
       <div className="social-links">
 
-        <a href="https://github.com/luyvannda/digital-business-card" rel="noreferrer" target="_blank">
+        <a href="https://github.com/luyvannda" rel="noreferrer" target="_blank">
           <FontAwesomeIcon icon={faGithub} className='github' />
         </a>
 
