@@ -233,23 +233,25 @@ body {
 
 
 .skills-container {
-  padding-bottom: 4rem;
+  padding: 0 1.1rem 4rem 1.1rem;
   margin-top: 2.5rem;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   position: relative;
   overflow-x: hidden;
 
-  &::after {
-    content: "";
-    display: block;
-    width: 90vw;
-    border-bottom: 1.5px solid $main-white-color;
+  @include media-min(768px) {
+    display: grid;
+    grid-template-columns: repeat(2, 0.5fr);
   }
 
   .skills {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding-bottom: 2rem;
 
     h1 {
@@ -263,13 +265,28 @@ body {
     }
   }
 
-  .skill-rings {
+  .bottom-border {
+    display: block;
     position: absolute;
-    bottom: 0;
-    right: -23.5rem;
+    margin: 0 1.1rem;
+    bottom: 4rem;
+    width: 91%;
+    border-bottom: 1.5px solid $main-white-color;
+
+    @include media-min(768px) {
+      margin: 0 2rem;
+    }
   }
 
 }
+
+.skill-rings {
+  position: absolute;
+  bottom: 0;
+  right: -23.5rem;
+}
+
+
 
 
 .projects {

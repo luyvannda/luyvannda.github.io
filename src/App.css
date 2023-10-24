@@ -188,22 +188,26 @@ body {
 }
 
 .skills-container {
-  padding-bottom: 4rem;
+  padding: 0 1.1rem 4rem 1.1rem;
   margin-top: 2.5rem;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   position: relative;
   overflow-x: hidden;
 }
-.skills-container::after {
-  content: "";
-  display: block;
-  width: 90vw;
-  border-bottom: 1.5px solid #ffffff;
+@media only screen and (min-width: 768px) {
+  .skills-container {
+    display: grid;
+    grid-template-columns: repeat(2, 0.5fr);
+  }
 }
 .skills-container .skills {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding-bottom: 2rem;
 }
 .skills-container .skills h1 {
@@ -214,7 +218,21 @@ body {
   font-weight: 600;
   color: #D9D9D9;
 }
-.skills-container .skill-rings {
+.skills-container .bottom-border {
+  display: block;
+  position: absolute;
+  margin: 0 1.1rem;
+  bottom: 4rem;
+  width: 91%;
+  border-bottom: 1.5px solid #ffffff;
+}
+@media only screen and (min-width: 768px) {
+  .skills-container .bottom-border {
+    margin: 0 2rem;
+  }
+}
+
+.skill-rings {
   position: absolute;
   bottom: 0;
   right: -23.5rem;
