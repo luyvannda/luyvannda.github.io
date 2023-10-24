@@ -169,13 +169,12 @@ body {
   position: absolute;
   top: 5rem;
   right: -4.5rem;
-  z-index: 0;
+  z-index: 1;
 }
 @media only screen and (min-width: 768px) {
   .hero-container .circle {
     right: -4.6rem;
     top: 10.7rem;
-    z-index: 2;
   }
 }
 
