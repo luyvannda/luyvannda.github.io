@@ -146,17 +146,26 @@ body {
 .hero-container {
   position: relative;
   overflow-x: hidden;
-  border-bottom: 1.5px solid #ffffff;
-  padding-bottom: 1rem;
-  margin-left: 1.1rem;
-  margin-right: 1.1rem;
+  padding: 0 1.1rem 1rem 1.1rem;
 }
 @media only screen and (min-width: 768px) {
   .hero-container {
     display: flex;
     flex-direction: row-reverse;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    padding: 0 2rem 1rem 2rem;
+  }
+}
+.hero-container::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  width: 91%;
+  border-bottom: 1.5px solid #ffffff;
+}
+@media only screen and (min-width: 768px) {
+  .hero-container::after {
+    width: 91.6%;
   }
 }
 .hero-container .rings {
@@ -168,12 +177,12 @@ body {
 .hero-container .circle {
   position: absolute;
   top: 5rem;
-  right: -4.5rem;
+  right: -3.6rem;
   z-index: 1;
 }
 @media only screen and (min-width: 768px) {
   .hero-container .circle {
-    right: -4.6rem;
+    right: -2.9rem;
     top: 10.7rem;
   }
 }

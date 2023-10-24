@@ -5,7 +5,6 @@ import Navbar from './components/Navbar'
 import ProfilePhoto from './components/ProfilePhoto'
 import Projects from './components/Projects'
 import Skills from './components/Skills'
-import Rings from './components/Rings'
 
 function App() {
 
@@ -18,8 +17,7 @@ function App() {
         <section className='hero-container'>
           <ProfilePhoto />
           <Hero />
-          <Rings />
-
+          <img className="rings" src="./images/pattern-rings.svg" alt="rings pattern"></img>
           <img className="circle" src="./images/pattern-circle.svg" alt="circle pattern"></img>
         </section>
 

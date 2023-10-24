@@ -38,6 +38,7 @@ body {
 }
 
 
+
 .navbar {
   display: flex;
   flex-direction: column;
@@ -123,7 +124,6 @@ body {
   }
 
 
-
   .hero-title {
     width: 14ch;
     font-size: clamp(2rem, 0.2rem + 5vw, 2.5rem);
@@ -186,17 +186,27 @@ body {
 .hero-container {
   position: relative;
   overflow-x: hidden;
-  border-bottom: 1.5px solid $main-white-color;
-  padding-bottom: 1rem;
-  margin-left: 1.1rem;
-  margin-right: 1.1rem;
+  padding: 0 1.1rem 1rem 1.1rem;
 
   @include media-min(768px) {
     display: flex;
     flex-direction: row-reverse;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    padding: 0 2rem 1rem 2rem;
   }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    width: 91%;
+    border-bottom: 1.5px solid $main-white-color;
+
+    @include media-min(768px) {
+      width: 91.60%;
+    }
+  }
+
 
 
   .rings {
@@ -209,11 +219,11 @@ body {
   .circle {
     position: absolute;
     top: 5rem;
-    right: -4.5rem;
+    right: -3.6rem;
     z-index: 1;
 
     @include media-min(768px) {
-      right: -4.6rem;
+      right: -2.9rem;
       top: 10.7rem;
     }
   }
