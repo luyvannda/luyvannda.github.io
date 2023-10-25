@@ -2,30 +2,33 @@ export default function ContactForm() {
   return (
 
     <div className="form-container">
-      <h2>Contact</h2>
-      <p>I would love to hear about your project and how I could help. Please fill in the form, and I&apos;ll get back to you as soon as possible.</p>
+      <div className="contact-form">
+        <h2>Contact</h2>
+        <p>I would love to hear about your project and how I could help. Please fill in the form, and I&apos;ll get back to you as soon as possible.</p>
 
-      <form
-        className="contact-form"
-        action="https://getform.io/f/e84d47c6-f990-424a-b7fe-56b37f894479"
-        method="POST">
+        <form
+          action="https://getform.io/f/e84d47c6-f990-424a-b7fe-56b37f894479"
+          method="POST">
 
-        <label htmlFor="name">
-          <input id="name" type="text" name="name" placeholder="NAME"></input>
-        </label>
+          <label htmlFor="name">
+            <input id="name" type="text" name="name" placeholder="NAME"></input>
+          </label>
 
-        <label htmlFor="email">
-          <input id="email" type="email" name="email" placeholder="EMAIL"></input>
-        </label>
+          <label htmlFor="email">
+            <input id="email" type="email" name="email" placeholder="EMAIL"></input>
+          </label>
 
-        <label htmlFor="message">
-          <textarea id="message" name="message" rows="4" placeholder="MESSAGE"></textarea>
-        </label>
-        <img className="form-rings" src="images/pattern-rings.svg" alt="rings pattern decoration"></img>
+          <label htmlFor="message">
+            <textarea id="message" name="message" rows="4" placeholder="MESSAGE"></textarea>
+          </label>
 
-        <button className="form-btn" type="submit">SEND MESSAGE</button>
-      </form>
+          <button className="form-btn" type="submit">SEND MESSAGE</button>
+        </form>
+      </div>
 
+      <img className="form-rings" src="images/pattern-rings.svg" alt="rings pattern decoration"></img>
+
+      <div className="bottom-border"></div>
     </div>
   )
 }
