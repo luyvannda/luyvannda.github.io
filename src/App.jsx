@@ -19,6 +19,9 @@ function App() {
           <Hero />
           <img className="rings" src="./images/pattern-rings.svg" alt="rings pattern"></img>
           <img className="circle" src="./images/pattern-circle.svg" alt="circle pattern"></img>
+
+          <div className="bottom-border"></div>
+
         </section>
 
         <section>

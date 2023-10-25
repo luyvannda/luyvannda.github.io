@@ -27,7 +27,9 @@ export default function Projects() {
         <ContactBtn />
       </div>
 
-      {projectElements}
+      <div className="projects-grid">
+        {projectElements}
+      </div>
 
     </div>
 

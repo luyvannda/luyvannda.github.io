@@ -155,16 +155,15 @@ body {
     padding: 0 2rem 1rem 2rem;
   }
 }
-.hero-container::after {
-  content: "";
-  display: inline-block;
+.hero-container .bottom-border {
+  display: block;
   position: absolute;
   bottom: 0;
   width: 91%;
   border-bottom: 1.5px solid #ffffff;
 }
 @media only screen and (min-width: 768px) {
-  .hero-container::after {
+  .hero-container .bottom-border {
     width: 91.6%;
   }
 }
@@ -228,6 +227,7 @@ body {
 }
 @media only screen and (min-width: 768px) {
   .skills-container .bottom-border {
+    width: 91.6%;
     margin: 0 2rem;
   }
 }
@@ -242,6 +242,11 @@ body {
   padding: 0 1.1rem 2rem 1.1rem;
   overflow-x: hidden;
 }
+@media only screen and (min-width: 768px) {
+  .projects {
+    padding: 0 2rem 2rem 2rem;
+  }
+}
 .projects .projects-heading {
   display: flex;
   align-items: center;
@@ -250,56 +255,64 @@ body {
 .projects .projects-heading h2 {
   font-size: 2.5rem;
 }
-.projects .projects-main {
-  padding-top: 1.5rem;
+.projects .projects-grid {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
 }
-.projects .projects-main img {
+@media only screen and (min-width: 768px) {
+  .projects .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+  }
+}
+.projects .projects-grid .projects-main {
+  padding-top: 1.5rem;
+}
+.projects .projects-grid .projects-main img {
   width: 100%;
   margin-bottom: 0.8rem;
 }
-.projects .projects-main h2 {
+.projects .projects-grid .projects-main h2 {
   padding: 0.5rem 0;
   font-size: 1.5rem;
 }
-.projects .projects-main p {
+.projects .projects-grid .projects-main p {
   color: #D9D9D9;
   padding-bottom: 1rem;
   word-spacing: 0.8rem;
 }
-.projects .projects-main .project-links {
+.projects .projects-grid .projects-main .project-links {
   margin-bottom: 0.5rem;
   display: flex;
   gap: 1.5rem;
 }
-.projects .projects-main .project-links .live-view {
+.projects .projects-grid .projects-main .project-links .live-view {
   text-decoration: none;
   color: #ffffff;
 }
-.projects .projects-main .project-links .live-view::after {
+.projects .projects-grid .projects-main .project-links .live-view::after {
   content: "";
   display: block;
   margin-top: 0.4rem;
   width: 6.9rem;
   border-bottom: 2px solid #4ee1a0;
 }
-.projects .projects-main .project-links .live-view:hover {
+.projects .projects-grid .projects-main .project-links .live-view:hover {
   color: #4ee1a0;
   cursor: pointer;
 }
-.projects .projects-main .project-links .source-view {
+.projects .projects-grid .projects-main .project-links .source-view {
   text-decoration: none;
   color: #ffffff;
 }
-.projects .projects-main .project-links .source-view::after {
+.projects .projects-grid .projects-main .project-links .source-view::after {
   content: "";
   display: block;
   margin-top: 0.4rem;
   width: 5.2rem;
   border-bottom: 2px solid #4ee1a0;
 }
-.projects .projects-main .project-links .source-view:hover {
+.projects .projects-grid .projects-main .project-links .source-view:hover {
   color: #4ee1a0;
   cursor: pointer;
 }
