@@ -155,28 +155,31 @@ body {
   cursor: pointer;
 }
 
-.hero-container {
+.hero-section {
+  position: relative;
+  overflow-x: hidden;
+}
+.hero-section .hero-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
-  overflow-x: hidden;
   margin: 0 1.1rem 1rem 1.1rem;
 }
 @media only screen and (min-width: 768px) {
-  .hero-container {
+  .hero-section .hero-container {
     display: flex;
     flex-direction: row-reverse;
     margin: 0 2rem 1rem 2rem;
   }
 }
 @media only screen and (min-width: 1000px) {
-  .hero-container {
+  .hero-section .hero-container {
     margin: 0 4rem 1rem 4rem;
   }
 }
-.hero-container .bottom-border {
+.hero-section .hero-container .bottom-border {
   display: block;
   position: absolute;
   bottom: 0;
@@ -186,35 +189,35 @@ body {
   border-bottom: 1.5px solid #ffffff;
 }
 @media only screen and (min-width: 768px) {
-  .hero-container .bottom-border {
+  .hero-section .hero-container .bottom-border {
     margin: 0 2rem;
   }
 }
 @media only screen and (min-width: 1000px) {
-  .hero-container .bottom-border {
+  .hero-section .hero-container .bottom-border {
     margin: 0 4rem;
   }
 }
-.hero-container .rings {
+.hero-section .rings {
   position: absolute;
   top: 0;
   left: -21rem;
   z-index: 0;
 }
-.hero-container .circle {
+.hero-section .circle {
   position: absolute;
   top: 5rem;
   right: -3.6rem;
   z-index: 1;
 }
 @media only screen and (min-width: 768px) {
-  .hero-container .circle {
+  .hero-section .circle {
     right: -2.9rem;
     top: 10.7rem;
   }
 }
 @media only screen and (min-width: 1000px) {
-  .hero-container .circle {
+  .hero-section .circle {
     right: 4rem;
   }
 }

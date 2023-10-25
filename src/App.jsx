@@ -14,14 +14,16 @@ function App() {
         <Navbar />
       </header>
       <main>
-        <section className='hero-container'>
-          <ProfilePhoto />
-          <Hero />
+        <section className='hero-section'>
+
+          <div className='hero-container'>
+            <ProfilePhoto />
+            <Hero />
+            <div className="bottom-border"></div>
+          </div>
+
           <img className="rings" src="./images/pattern-rings.svg" alt="rings pattern"></img>
           <img className="circle" src="./images/pattern-circle.svg" alt="circle pattern"></img>
-
-          <div className="bottom-border"></div>
-
         </section>
 
         <section>
