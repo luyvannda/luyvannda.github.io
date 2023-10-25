@@ -196,36 +196,41 @@ body {
 
 
 .hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   position: relative;
   overflow-x: hidden;
-  padding: 0 1.1rem 1rem 1.1rem;
+  margin: 0 1.1rem 1rem 1.1rem;
 
   @include media-min(768px) {
     display: flex;
     flex-direction: row-reverse;
-    padding: 0 2rem 1rem 2rem;
+    margin: 0 2rem 1rem 2rem;
   }
 
   @include media-min(1000px) {
-    padding: 0 4rem 1rem 4rem;
+    margin: 0 4rem 1rem 4rem;
   }
 
   .bottom-border {
     display: block;
     position: absolute;
     bottom: 0;
-    width: 91%;
+    width: 100%;
+    margin: 0 1.1rem;
+    padding-top: 1.5rem;
     border-bottom: 1.5px solid $main-white-color;
 
     @include media-min(768px) {
-      width: 91.60%;
+      margin: 0 2rem;
     }
 
     @include media-min(1000px) {
-      width: 87.50%;
+      margin: 0 4rem;
     }
   }
-
 
   .rings {
     position: absolute;
@@ -434,11 +439,12 @@ body {
 
     @include media-min(1000px) {
       width: 100%;
-      margin: 0 4rem;
+      margin: 0;
       flex-direction: row;
       align-items: flex-start;
       justify-content: center;
-      gap: 1rem;
+      gap: 4rem;
+      padding: 2rem 4rem 0 4rem;
     }
 
     .form-heading {
@@ -453,9 +459,11 @@ body {
       }
 
       @include media-min(1000px) {
+        margin-top: 1.5rem;
+
         p {
           text-align: left;
-          width: 40ch;
+          width: 39ch;
         }
       }
     }
@@ -530,6 +538,10 @@ body {
 
     @include media-min(768px) {
       margin: 0 2rem;
+    }
+
+    @include media-min(1000px) {
+      margin: 0 4rem;
     }
   }
 
