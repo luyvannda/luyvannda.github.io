@@ -382,6 +382,10 @@ body {
     padding: 0 4rem 2rem 4rem;
   }
 
+  @include media-min(1300px) {
+    padding: 0 8rem 2rem 8rem;
+  }
+
   .projects-heading {
     display: flex;
     align-items: center;
@@ -491,6 +495,12 @@ body {
       padding: 2rem 4rem 0 4rem;
     }
 
+    @include media-min(1000px) {
+      padding: 2rem 8rem 0 8rem;
+    }
+
+
+
     .form-heading {
 
       h2 {
@@ -577,7 +587,6 @@ body {
 
   .bottom-border {
     margin: 0 1.1rem;
-    padding-top: 1.5rem;
     border-bottom: 1.5px solid $main-white-color;
 
     @include media-min(768px) {
@@ -586,6 +595,10 @@ body {
 
     @include media-min(1000px) {
       margin: 0 4rem;
+    }
+
+    @include media-min(1300px) {
+      margin: 0 8rem;
     }
   }
 

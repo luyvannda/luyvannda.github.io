@@ -346,6 +346,11 @@ body {
     padding: 0 4rem 2rem 4rem;
   }
 }
+@media only screen and (min-width: 1300px) {
+  .projects {
+    padding: 0 8rem 2rem 8rem;
+  }
+}
 .projects .projects-heading {
   display: flex;
   align-items: center;
@@ -443,6 +448,11 @@ body {
     padding: 2rem 4rem 0 4rem;
   }
 }
+@media only screen and (min-width: 1000px) {
+  .form-container .contact-form {
+    padding: 2rem 8rem 0 8rem;
+  }
+}
 .form-container .contact-form .form-heading h2 {
   font-size: clamp(2.5rem, 0.5rem + 0.5vw, 3.5rem);
 }
@@ -513,7 +523,6 @@ body {
 }
 .form-container .bottom-border {
   margin: 0 1.1rem;
-  padding-top: 1.5rem;
   border-bottom: 1.5px solid #ffffff;
 }
 @media only screen and (min-width: 768px) {
@@ -524,6 +533,11 @@ body {
 @media only screen and (min-width: 1000px) {
   .form-container .bottom-border {
     margin: 0 4rem;
+  }
+}
+@media only screen and (min-width: 1300px) {
+  .form-container .bottom-border {
+    margin: 0 8rem;
   }
 }
 
