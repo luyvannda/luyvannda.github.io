@@ -12,17 +12,17 @@ function Skills() {
   })
 
   return (
-    <>
+    <div>
       <div className="skills-container">
         {skillsElement}
-
-
         <img className="skill-rings" src="./images/pattern-rings.svg" alt="rings pattern"></img>
+
         <div className="bottom-border"></div>
 
       </div>
 
-    </>
+
+    </div>
   )
 }
 
