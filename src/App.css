@@ -451,6 +451,7 @@ body {
 @media only screen and (min-width: 1300px) {
   .form-background .contact-form {
     padding: 2rem 8rem 0 8rem;
+    gap: 8rem;
   }
 }
 .form-background .contact-form .form-heading h2 {

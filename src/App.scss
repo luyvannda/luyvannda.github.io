@@ -497,6 +497,7 @@ body {
 
     @include media-min(1300px) {
       padding: 2rem 8rem 0 8rem;
+      gap: 8rem;
     }
 
     .form-heading {
