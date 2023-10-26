@@ -64,6 +64,11 @@ body {
     padding: 0 4rem;
   }
 }
+@media only screen and (min-width: 1300px) {
+  .navbar {
+    padding: 0 8rem;
+  }
+}
 .profile-container {
   width: 100vw;
   overflow-x: hidden;
@@ -90,6 +95,12 @@ body {
     margin-bottom: 2rem;
   }
 }
+@media only screen and (min-width: 1300px) {
+  .profile-container .profile_photo .photo {
+    width: 45%;
+    margin-bottom: 4rem;
+  }
+}
 
 .hero {
   display: flex;
@@ -108,7 +119,7 @@ body {
 }
 .hero .hero-title {
   width: 14ch;
-  font-size: clamp(2rem, 0.2rem + 5vw, 2.5rem);
+  font-size: clamp(2rem, 0.4rem + 4vw, 3.5rem);
 }
 .hero .hero-title span {
   text-decoration: none;
@@ -123,8 +134,20 @@ body {
 }
 @media only screen and (min-width: 768px) {
   .hero .hero-title span::after {
-    width: 14rem;
-    margin-left: 4.3rem;
+    width: 13rem;
+    margin-left: 4rem;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .hero .hero-title span::after {
+    width: 16.7rem;
+    margin-left: 5rem;
+  }
+}
+@media only screen and (min-width: 1300px) {
+  .hero .hero-title span::after {
+    width: 19.7rem;
+    margin-left: 6rem;
   }
 }
 .hero .hero-text {
@@ -132,6 +155,7 @@ body {
   padding: 1.5rem 0;
   line-height: 1.625rem;
   text-align: justify;
+  font-size: clamp(1rem, 0.2rem + 1.4vw, 1.5rem);
 }
 
 .contact-btn {
@@ -179,6 +203,11 @@ body {
     margin: 0 4rem 1rem 4rem;
   }
 }
+@media only screen and (min-width: 1300px) {
+  .hero-section .hero-container {
+    margin: 0 8rem 1rem 8rem;
+  }
+}
 .hero-section .hero-container .bottom-border {
   display: block;
   position: absolute;
@@ -219,6 +248,11 @@ body {
 @media only screen and (min-width: 1000px) {
   .hero-section .circle {
     right: 4rem;
+  }
+}
+@media only screen and (min-width: 1300px) {
+  .hero-section .circle {
+    right: 30rem;
   }
 }
 

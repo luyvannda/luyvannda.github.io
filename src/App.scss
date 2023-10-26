@@ -91,6 +91,13 @@ body {
 
 }
 
+@include media-min(1300px) {
+  .navbar {
+    padding: 0 8rem;
+  }
+
+}
+
 .profile-container {
   width: 100vw;
   overflow-x: hidden;
@@ -115,6 +122,10 @@ body {
         margin-bottom: 2rem;
       }
 
+      @include media-min(1300px) {
+        width: 45%;
+        margin-bottom: 4rem;
+      }
     }
 
   }
@@ -138,7 +149,7 @@ body {
 
   .hero-title {
     width: 14ch;
-    font-size: clamp(2rem, 0.2rem + 5vw, 2.5rem);
+    font-size: clamp(2rem, 0.4rem + 4vw, 3.5rem);
 
     span {
       text-decoration: none;
@@ -152,8 +163,19 @@ body {
         border-bottom: 0.2em solid $underline-green;
 
         @include media-min(768px) {
-          width: 14rem;
-          margin-left: 4.3rem;
+          width: 13rem;
+          margin-left: 4rem;
+        }
+
+        @include media-min(1000px) {
+          width: 16.7rem;
+          margin-left: 5rem;
+        }
+
+
+        @include media-min(1300px) {
+          width: 19.7rem;
+          margin-left: 6rem;
         }
       }
     }
@@ -165,7 +187,7 @@ body {
     padding: 1.5rem 0;
     line-height: 1.625rem;
     text-align: justify;
-
+    font-size: clamp(1rem, 0.2rem + 1.4vw, 1.5rem);
   }
 }
 
@@ -216,6 +238,10 @@ body {
       margin: 0 4rem 1rem 4rem;
     }
 
+    @include media-min(1300px) {
+      margin: 0 8rem 1rem 8rem;
+    }
+
     .bottom-border {
       display: block;
       position: absolute;
@@ -255,6 +281,10 @@ body {
 
     @include media-min(1000px) {
       right: 4rem;
+    }
+
+    @include media-min(1300px) {
+      right: 30rem;
     }
   }
 }
