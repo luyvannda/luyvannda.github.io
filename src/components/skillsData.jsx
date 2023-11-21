@@ -34,5 +34,11 @@ export const skillsData = [
     id: 6,
     name: "Sass",
     experience: "6 Months"
+  },
+
+  {
+    id: 7,
+    name: "Bootstrap 5",
+    experience: "3 Months"
   }
 ]

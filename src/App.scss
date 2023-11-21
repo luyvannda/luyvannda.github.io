@@ -167,13 +167,12 @@ body {
           margin-left: 4rem;
         }
 
-        @include media-min(1000px) {
+        @include media-min(900px) {
           width: 16.7rem;
           margin-left: 5rem;
         }
 
-
-        @include media-min(1300px) {
+        @include media-min(1200px) {
           width: 19.7rem;
           margin-left: 6rem;
         }

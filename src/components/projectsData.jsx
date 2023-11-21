@@ -42,5 +42,14 @@ export const projectsData = [
     skills: "REACT SASS",
     livePreview: "https://luyvannda.github.io/digital-business-card/",
     sourceCode: "https://github.com/luyvannda/digital-business-card"
+  },
+
+  {
+    id: 6,
+    imgCover: "sign-up-form.webp",
+    title: "SIGN UP FORM",
+    skills: "REACT BOOTSTRAP SASS",
+    livePreview: "https://luyvannda.github.io/sign-up-form/",
+    sourceCode: "https://github.com/luyvannda/sign-up-form/"
   }
 ]
