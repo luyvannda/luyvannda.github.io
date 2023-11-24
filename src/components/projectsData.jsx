@@ -51,5 +51,14 @@ export const projectsData = [
     skills: "REACT BOOTSTRAP SASS",
     livePreview: "https://luyvannda.github.io/sign-up-form/",
     sourceCode: "https://github.com/luyvannda/sign-up-form/"
+  },
+
+  {
+    id: 7,
+    imgCover: "travel-journal.webp",
+    title: "TRAVEL JOURNAL",
+    skills: "REACT BOOTSTRAP SASS",
+    livePreview: "https://luyvannda.github.io/travel-journal/",
+    sourceCode: "https://github.com/luyvannda/travel-journal/"
   }
 ]
