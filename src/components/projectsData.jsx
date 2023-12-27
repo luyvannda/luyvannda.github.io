@@ -60,5 +60,14 @@ export const projectsData = [
     skills: "REACT BOOTSTRAP SASS",
     livePreview: "https://luyvannda.github.io/travel-journal/",
     sourceCode: "https://github.com/luyvannda/travel-journal/"
+  },
+
+  {
+    id: 8,
+    imgCover: "meme-generator.webp",
+    title: "MEME GENERATOR",
+    skills: "REACT BOOTSTRAP JAVASCRIPT API",
+    livePreview: "https://luyvannda.github.io/meme-generator/",
+    sourceCode: "https://github.com/luyvannda/meme-generator/"
   }
 ]
