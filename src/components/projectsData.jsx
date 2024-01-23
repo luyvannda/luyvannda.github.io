@@ -64,7 +64,7 @@ export const projectsData = [
   {
     id: 8,
     imgCover: "workation.webp",
-    title: "Workation Rental Property",
+    title: "WORKATION RENTAL PROPERTY",
     skills: "REACT TAILWIND",
     livePreview: "https://luyvannda.github.io/workation/",
     sourceCode: "https://github.com/luyvannda/workation"
