@@ -1,5 +1,4 @@
 export const skillsData = [
-
   {
     id: 1,
     name: "HTML",
@@ -38,14 +37,18 @@ export const skillsData = [
 
   {
     id: 7,
-    name: "Bootstrap 5",
+    name: "Bootstrap",
     experience: "3 Months"
   },
 
   {
     id: 8,
-    name: "API",
+    name: "Tailwind",
+    experience: "1 Month"
+  },
+  {
+    id: 9,
+    name: "NextJS",
     experience: "1 Month"
   }
-
-]
+];

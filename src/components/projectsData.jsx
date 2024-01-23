@@ -37,15 +37,6 @@ export const projectsData = [
 
   {
     id: 5,
-    imgCover: "digital-business-card.webp",
-    title: "DIGITAL BUSINESS CARD",
-    skills: "REACT SASS",
-    livePreview: "https://luyvannda.github.io/digital-business-card/",
-    sourceCode: "https://github.com/luyvannda/digital-business-card"
-  },
-
-  {
-    id: 6,
     imgCover: "sign-up-form.webp",
     title: "SIGN UP FORM",
     skills: "REACT BOOTSTRAP SASS",
@@ -54,7 +45,7 @@ export const projectsData = [
   },
 
   {
-    id: 7,
+    id: 6,
     imgCover: "travel-journal.webp",
     title: "TRAVEL JOURNAL",
     skills: "REACT BOOTSTRAP SASS",
@@ -63,11 +54,19 @@ export const projectsData = [
   },
 
   {
-    id: 8,
+    id: 7,
     imgCover: "meme-generator.webp",
     title: "MEME GENERATOR",
     skills: "REACT BOOTSTRAP JAVASCRIPT API",
     livePreview: "https://luyvannda.github.io/meme-generator/",
     sourceCode: "https://github.com/luyvannda/meme-generator/"
+  },
+  {
+    id: 8,
+    imgCover: "workation.webp",
+    title: "Workation Rental Property",
+    skills: "REACT TAILWIND",
+    livePreview: "https://luyvannda.github.io/workation/",
+    sourceCode: "https://github.com/luyvannda/workation"
   }
-]
+];
