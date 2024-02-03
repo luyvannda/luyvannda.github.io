@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap");
 
 @mixin media-min($breakpoint) {
   @media only screen and (min-width: $breakpoint) {
@@ -7,10 +6,9 @@
   }
 }
 
-
 $main-black-color: #222222;
 $main-white-color: #ffffff;
-$main-text-gray: #D9D9D9;
+$main-text-gray: #d9d9d9;
 $underline-green: #4ee1a0;
 $background-opacity: 0.1;
 
@@ -32,12 +30,10 @@ body {
   width: 100vw;
   min-height: 100vh;
   background-color: $main-black-color;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   color: $main-white-color;
   overflow-x: hidden;
 }
-
-
 
 .navbar {
   display: flex;
@@ -68,7 +64,6 @@ body {
       }
     }
   }
-
 }
 
 @include media-min(768px) {
@@ -88,14 +83,12 @@ body {
   .navbar {
     padding: 0 4rem;
   }
-
 }
 
 @include media-min(1300px) {
   .navbar {
     padding: 0 8rem;
   }
-
 }
 
 .profile-container {
@@ -127,11 +120,8 @@ body {
         margin-bottom: 4rem;
       }
     }
-
   }
 }
-
-
 
 .hero {
   display: flex;
@@ -180,7 +170,6 @@ body {
     }
   }
 
-
   .hero-text {
     color: $main-text-gray;
     padding: 1.5rem 0;
@@ -189,7 +178,6 @@ body {
     font-size: clamp(1rem, 0.2rem + 1.4vw, 1.5rem);
   }
 }
-
 
 .contact-btn {
   display: flex;
@@ -288,7 +276,11 @@ body {
   }
 }
 
-
+.skills-title {
+  text-align: center;
+  font-size: 2rem;
+  color: $main-white-color;
+}
 
 .skills-container {
   padding: 0 1.1rem 4rem 1.1rem;
@@ -311,7 +303,6 @@ body {
     padding: 0 4rem 4rem 4rem;
   }
 
-
   @include media-min(1300px) {
     padding: 0 8rem 4rem 8rem;
   }
@@ -330,10 +321,10 @@ body {
 
     p {
       font-weight: 600;
+      font-size: 1.25rem;
       color: $main-text-gray;
     }
   }
-
 }
 
 .skill-rings {
@@ -350,24 +341,20 @@ body {
   border-bottom: 1.5px solid $main-white-color;
 
   @include media-min(768px) {
-    width: 91.60%;
+    width: 91.6%;
     margin: 0 2rem;
   }
 
   @include media-min(1000px) {
-    width: 87.50%;
+    width: 87.5%;
     margin: 0 4rem;
   }
 
   @include media-min(1300px) {
-    width: 82.50%;
+    width: 82.5%;
     margin: 0 8rem;
   }
 }
-
-
-
-
 
 .projects {
   padding: 0 1.1rem 2rem 1.1rem;
@@ -393,7 +380,6 @@ body {
     h2 {
       font-size: clamp(2.5rem, 0.5rem + 5vw, 3.5rem);
     }
-
   }
 
   .projects-grid {
@@ -500,7 +486,6 @@ body {
     }
 
     .form-heading {
-
       h2 {
         text-align: center;
         font-size: clamp(2.5rem, 0.5rem + 5vw, 3.5rem);
@@ -572,27 +557,23 @@ body {
           width: 7.3rem;
           margin-top: 0.5rem;
           border-bottom: 2px solid $underline-green;
-
         }
 
         &:hover {
           color: $underline-green;
         }
-
       }
     }
-
   }
 
   .form-rings {
     position: absolute;
     bottom: 4.25rem;
-    left: -21.20rem;
+    left: -21.2rem;
 
     @include media-min(768px) {
       bottom: 1rem;
     }
-
   }
 
   .bottom-border {
@@ -613,9 +594,6 @@ body {
       margin: 0 8rem;
     }
   }
-
-
-
 }
 
 footer {

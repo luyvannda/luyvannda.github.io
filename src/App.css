@@ -151,7 +151,7 @@ body {
   }
 }
 .hero .hero-text {
-  color: #D9D9D9;
+  color: #d9d9d9;
   padding: 1.5rem 0;
   line-height: 1.625rem;
   text-align: justify;
@@ -256,6 +256,12 @@ body {
   }
 }
 
+.skills-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #ffffff;
+}
+
 .skills-container {
   padding: 0 1.1rem 4rem 1.1rem;
   margin-top: 2rem;
@@ -297,7 +303,8 @@ body {
 }
 .skills-container .skills p {
   font-weight: 600;
-  color: #D9D9D9;
+  font-size: 1.25rem;
+  color: #d9d9d9;
 }
 
 .skill-rings {
@@ -381,7 +388,7 @@ body {
   font-size: 1.5rem;
 }
 .projects .projects-grid .projects-main p {
-  color: #D9D9D9;
+  color: #d9d9d9;
   padding-bottom: 1rem;
   word-spacing: 0.8rem;
 }
@@ -461,7 +468,7 @@ body {
 .form-background .contact-form .form-heading p {
   font-size: clamp(1rem, 0.2rem + 1.4vw, 1.5rem);
   text-align: center;
-  color: #D9D9D9;
+  color: #d9d9d9;
 }
 @media only screen and (min-width: 1000px) {
   .form-background .contact-form .form-heading {
