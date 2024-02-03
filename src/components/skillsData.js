@@ -21,8 +21,8 @@ export const skillsData = [
 
   {
     id: 4,
-    name: "Accessibility",
-    experience: calculateExperience("2023-01-01")
+    name: "Git/GitHub",
+    experience: calculateExperience("2023-04-28")
   },
 
   {
@@ -46,16 +46,16 @@ export const skillsData = [
   {
     id: 8,
     name: "Tailwind",
-    experience: calculateExperience("2023-12-01")
+    experience: calculateExperience("2024-01-01")
   },
   {
     id: 9,
     name: "Next.js",
-    experience: calculateExperience("2023-12-01")
+    experience: calculateExperience("2024-01-01")
   },
   {
     id: 10,
     name: "Typescript",
-    experience: calculateExperience("2023-12-01")
+    experience: calculateExperience("2024-01-01")
   }
 ];

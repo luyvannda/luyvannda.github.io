@@ -15,8 +15,10 @@ export function calculateExperience(startDate) {
 
   const monthsOfExperience = monthInterval % 12;
 
-  if (yearsOfExperience > 0) {
-    return `${yearsOfExperience} Year ${
+  if (monthsOfExperience === 0) {
+    return `${yearsOfExperience} Year${yearsOfExperience > 1 ? "s" : ""}`;
+  } else if (yearsOfExperience > 0) {
+    return `${yearsOfExperience} Year${
       yearsOfExperience > 1 ? "s" : ""
     } ${monthsOfExperience} Month${monthsOfExperience > 1 ? "s" : ""}`;
   } else {
