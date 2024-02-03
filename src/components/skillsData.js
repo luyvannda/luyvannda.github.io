@@ -45,16 +45,22 @@ export const skillsData = [
 
   {
     id: 8,
+    name: "Restful API",
+    experience: calculateExperience("2023-12-01")
+  },
+
+  {
+    id: 9,
     name: "Tailwind",
     experience: calculateExperience("2024-01-01")
   },
   {
-    id: 9,
+    id: 10,
     name: "Next.js",
     experience: calculateExperience("2024-01-01")
   },
   {
-    id: 10,
+    id: 11,
     name: "Typescript",
     experience: calculateExperience("2024-01-01")
   }

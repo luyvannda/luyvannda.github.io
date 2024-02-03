@@ -7,10 +7,12 @@ export default function Projects() {
   const projectElements = reverseProjectsData.map((project) => {
     return (
       <div key={project.id} className="projects-main">
-        <img
-          src={`images/${project.imgCover}`}
-          alt="Project's preview image"
-        ></img>
+        <a href={project.livePreview} target="_blank" rel="noreferrer">
+          <img
+            src={`images/${project.imgCover}`}
+            alt="Project's preview image"
+          ></img>
+        </a>
         <h2>{project.title}</h2>
         <p>{project.skills}</p>
 

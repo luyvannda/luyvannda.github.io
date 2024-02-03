@@ -68,5 +68,14 @@ export const projectsData = [
     skills: "REACT TAILWIND",
     livePreview: "https://luyvannda.github.io/workation/",
     sourceCode: "https://github.com/luyvannda/workation"
+  },
+
+  {
+    id: 9,
+    imgCover: "tesla-landing-page.webp",
+    title: "TESLA LANDING PAGE",
+    skills: "REACT TAILWIND TYPESCRIPT",
+    livePreview: "https://luyvannda.github.io/tesla-landing-page/",
+    sourceCode: "https://github.com/luyvannda/tesla-landing-page"
   }
 ];
